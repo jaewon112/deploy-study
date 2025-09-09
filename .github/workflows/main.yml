@@ -22,7 +22,7 @@ jobs:
         uses: actions/setup-java@v5.0.0
         with:
           java-version: '21'
-          distribution: 'tenmurin'
+          distribution: 'temurin'
 
       - name: build spring boot app
         run: |
