@@ -33,7 +33,7 @@ jobs:
         run: |
           cd web
           cat <<EOF | sudo tee ./.env
-          ${{ secret.REACT_ENV }}
+          ${{ secrets.REACT_ENV }}
           EOF
           npm install
           npm run build
